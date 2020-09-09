@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasaal Lawrencia</title>
+    <link rel="stylesheet" href="Week 1/css/bootstrap.css" />
+  </head>
+  <body class="">
+    <h1 style="color: yellowgreen">Nasaal Lawrencia</h1>
+    <b style="color: rebeccapurple">Current Date</b>
+    <p style="color: goldenrod">Current Date is :</p>
+    <button
+      style="
+        color: palevioletred;
+        background-color: cadetblue;
+        border-radius: 5px;
+      "
+      onclick="GETDATE()"
+    >
+      GET DATE
+    </button>
+    <br />
+    <span class="output"></span>
+    <script type="text/javascript">
+      function GETDATE() {
+        let date = new Date().toString();
+        document.querySelector(".output").textContent = date;
+      }
+    </script>
+  </body>
+</html>
